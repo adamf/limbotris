@@ -1,0 +1,43 @@
+head	1.1;
+access;
+symbols;
+locks; strict;
+comment	@// @;
+
+
+1.1
+date	98.04.27.13.40.21;	author adamf;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@
+include "sys.m";
+include "draw.m";
+include "tk.m";
+include "wmlib.m";
+
+sys : Sys;
+draw : Draw;
+tk : Tk;
+wmlib : Wmlib;
+   
+Toplevel: import Tk;  
+FD : import Sys;
+
+test_tk: module
+{
+   init: fn(ctxt: ref Draw->Context, argv: list of string);
+   #test_tk: fn();
+};
+
+@
